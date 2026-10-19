@@ -1,360 +1,458 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Juha's Smart Grow Project</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #F7F5EE;
-      color: #26352C;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #E9F0E5;
-      padding: 80px 24px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 14px;
-      color: #2F5D3A;
-    }
-
-    header p {
-      font-size: 20px;
-      color: #617065;
-      max-width: 720px;
-      margin: auto;
-    }
-
-    nav {
-      background: white;
-      padding: 18px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      margin: 0 18px;
-      color: #365943;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 25px;
-    }
-
-    section {
-      margin-bottom: 80px;
-    }
-
-    h2 {
-      font-size: 30px;
-      color: #315E3E;
-      margin-bottom: 24px;
-    }
-
-    h3 {
-      color: #486B51;
-      margin-top: 30px;
-    }
-
-    .question {
-      background: white;
-      border-left: 5px solid #739B72;
-      padding: 24px 28px;
-      margin: 30px 0;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .journey {
-      font-size: 21px;
-      font-weight: bold;
-      text-align: center;
-      padding: 30px;
-      background: #EDF3E9;
-      border-radius: 12px;
-      margin: 30px 0;
-    }
-
-    .card {
-      background: white;
-      padding: 28px;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-    }
-
-    .status {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      background: #E7EFE5;
-      font-size: 14px;
-      font-weight: bold;
-    }
+You are a senior front-end designer and developer creating a polished personal engineering portfolio website for a Grade 8 student.
+
+The student is Juha, currently in Grade 8.
+
+Background:
+- She has studied Arduino for approximately 1 year.
+- Before Arduino, she studied VEX robotics coding for approximately 1 year.
+- She is currently developing a long-term Smart Grow / Smart Farm engineering project.
+- The project begins with a simple Arduino-based temperature and humidity sensor.
+- It will continue into soil moisture sensing, automatic watering, light measurement, real plant testing, data logging, troubleshooting, system improvement, and final presentation.
+- This project is expected to continue into Upper School, so the website must be designed as a long-term engineering archive rather than a short-term school assignment.
+- She also leads an Eco Grow Club at school, which connects plant growing, observation, sustainability, recycled-material planter design, journaling, and botanical art.
+- The Smart Grow project should connect naturally to the Eco Grow Club, but the website itself should primarily feel like an engineering and research portfolio.
+
+The goal of the website:
+Create a credible, serious, modern engineering portfolio that documents Juha’s growth as a student engineer over several years.
+
+The website should NOT look:
+- childish
+- like a school worksheet
+- like a generic coding bootcamp page
+- overly decorative
+- overly corporate
+- like a professional adult engineer pretending to be a student
+- like an admissions marketing page
+
+The website SHOULD feel:
+- intelligent
+- calm
+- modern
+- technical
+- academically credible
+- reflective
+- student-owned
+- serious but still age-appropriate
+- elegant enough to be viewed by teachers, boarding school admissions officers, mentors, and future Upper School faculty
+
+Visual direction:
+Use a refined “engineering lab notebook + modern portfolio” aesthetic.
+
+Design language:
+- off-white / warm neutral background
+- deep forest green as primary color
+- muted olive or moss accent
+- charcoal or very dark green for code/data panels
+- restrained use of lime or fresh green only as a small accent
+- no bright cartoon greens
+- no childish plant illustrations
+- no excessive emojis
+- no playful rounded bubble UI
+- no pastel-heavy design
+
+Suggested color palette:
+- Background: #F6F5EF
+- Surface / Card: #FFFFFF
+- Deep Forest Green: #173F32
+- Secondary Green: #496858
+- Accent Moss: #8AA66B
+- Dark Text: #18221C
+- Muted Text: #6D786F
+- Border: #D9DED8
+- Code Panel Background: #111815
+- Code Panel Text: #D9E5DA
+
+Typography:
+Use a professional editorial + technical combination.
+
+Recommended:
+- Headings: "DM Sans", "Inter", or "Manrope"
+- Body: "Inter" or "Source Sans 3"
+- Code / data labels: "IBM Plex Mono" or "JetBrains Mono"
+
+Typography scale:
+- Hero title: 52–64px desktop, 36–42px mobile
+- Hero subtitle: 20–24px
+- Section title: 30–36px
+- Card title: 20–24px
+- Body text: 16–18px
+- Metadata / labels: 12–14px
+- Code / sensor values: 14–16px
+
+Use medium and semibold weights, not excessive bolding.
+
+Layout:
+- max-width around 1180–1240px
+- generous whitespace
+- responsive grid
+- minimal shadows
+- 1px subtle borders
+- corner radius around 10–14px
+- strong alignment and visual hierarchy
+
+Navigation:
+Create a sticky top navigation with:
+- Overview
+- Build Log
+- System
+- Experiments
+- Data
+- Engineering Notebook
+- Eco Grow Club
+- Reflections
+
+The site should be easy to expand later with new logs and new project phases.
+
+HOME / HERO SECTION:
+Create a mature hero section.
+
+Suggested title:
+JUHA / SMART GROW LAB
+
+Suggested subtitle:
+An evolving engineering project exploring plant care, sensors, automation, and data.
+
+Include:
+- current project status
+- current prototype version
+- current focus
+- small technology tags such as:
+  Arduino
+  Sensors
+  Automation
+  Plant Data
+  Engineering
+
+Example:
+CURRENT VERSION
+v0.2 — Soil Moisture Calibration
+
+CURRENT FOCUS
+Understanding when a plant actually needs water
+
+Include two buttons:
+- View Build Log
+- View Latest Experiment
+
+Do not use a large cartoon plant emoji.
+
+Use a subtle abstract line or grid pattern inspired by circuit diagrams or technical notebooks.
+
+SECTION 1 — ORIGIN / WHY I STARTED
+This section should explain the beginning of the project.
+
+Include:
+- prior VEX robotics coding experience
+- transition into Arduino
+- first temperature and humidity sensor project
+- the moment when the student moved from “making the sensor work” to asking what the data could actually be used for
+
+Use short editorial paragraphs.
+
+Highlight this question prominently:
+“Can a plant tell us when it actually needs water?”
+
+Avoid exaggerated claims.
 
-    footer {
-      text-align: center;
-      padding: 50px 20px;
-      background: #E9F0E5;
-      color: #667268;
-    }
+SECTION 2 — PROJECT JOURNEY
+Use a horizontal or responsive vertical project timeline.
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 34px;
-      }
+Use engineering-style version labels instead of childish “Stage 1 / Stage 2”.
 
-      nav a {
-        display: inline-block;
-        margin: 7px;
-      }
-    }
-  </style>
-</head>
+Example:
+v0.1 — Temperature & Humidity Monitor
+v0.2 — Soil Moisture
+v0.3 — Automatic Watering
+v0.4 — Light Measurement
+v0.5 — Real Plant Testing
+v0.6 — Data & System Improvement
 
-<body>
+For each version show:
+- status
+- goal
+- what changed
+- date
+- key learning
 
-<nav>
-  <a href="#story">My Story</a>
-  <a href="#journey">Project Journey</a>
-  <a href="#questions">Questions</a>
-  <a href="#club">Eco Grow Club</a>
-  <a href="#next">What's Next</a>
-</nav>
+Status badges:
+Completed
+In Progress
+Planned
 
+SECTION 3 — SYSTEM OVERVIEW
+Create a technical system architecture section.
 
-<header>
+Show a clean visual flow:
+Sensors → Arduino → Decision Logic → Pump → Plant → Data Record
+
+Include components:
+- temperature/humidity sensor
+- soil moisture sensor
+- light sensor
+- Arduino
+- relay
+- water pump
+- plant
+- data storage/logging
+
+Use simple clean boxes and connector lines.
+
+Also include a “How the system decides” subsection:
+Measure
+Decide
+Water
+Record
+Improve
+Explain
+
+SECTION 4 — BUILD LOG
+This is one of the most important parts.
+
+The Build Log must be easy to update later.
+
+Create reusable log cards or article blocks.
+
+Each log entry should support:
+- date
+- version
+- title
+- short goal
+- what I tried
+- what happened
+- what I changed
+- what I learned
+- next step
+- images
+- optional code snippet
+- optional sensor data
 
-  <h1>🌱 Juha's Smart Grow Project</h1>
+Example structure:
+
+BUILD LOG 004
+Oct 2026
+Testing soil moisture readings
+
+Goal
+...
 
-  <p>
-    From a simple Arduino sensor to understanding
-    how plants grow.
-  </p>
+What I tried
+...
 
-</header>
+What happened
+...
 
+What I changed
+...
 
-<main>
+What I learned
+...
 
-<section id="story">
+Next test
+...
+
+The user should be able to duplicate this HTML block to create new entries.
+
+SECTION 5 — ENGINEERING NOTEBOOK
+Design a dedicated engineering notebook archive.
 
-  <h2>01 — Why I Started</h2>
+This section should be especially easy to update.
 
-  <p>
-    My first Arduino project was a simple device that
-    measured temperature and humidity.
-  </p>
+Each notebook entry should use this consistent structure:
+1. What I tried
+2. What happened
+3. What I changed
+4. What I will test next
+
+Add support for:
+- date
+- sketch image
+- photo
+- note
+- code snippet
+- sensor readings
 
-  <p>
-    At first, I was excited just to see the sensor work.
-    But then I started wondering what I could actually
-    do with the information.
-  </p>
+Create sample placeholder entries.
+
+Provide clear comments in the HTML such as:
+<!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
+
+SECTION 6 — EXPERIMENTS
+Create a research-style experiment archive.
 
-  <div class="question">
-    Can a plant tell us when it actually needs water?
-  </div>
-
-  <p>
-    That question became the starting point of this project.
-    I want to learn how sensors, data, and real plant
-    observations can help me make better decisions.
-  </p>
-
-</section>
-
-
-<section id="journey">
-
-  <h2>02 — Project Journey</h2>
-
-  <div class="journey">
-    Measure → Decide → Water → Record → Improve → Explain
-  </div>
-
-
-  <div class="card">
-
-    <span class="status">✓ Completed</span>
-
-    <h3>Stage 1 — My First Arduino Sensor</h3>
-
-    <ul>
-      <li>Measured temperature and humidity</li>
-      <li>Learned how sensors communicate with Arduino</li>
-      <li>Started exploring environmental data</li>
-    </ul>
-
-  </div>
-
-
-  <div class="card">
-
-    <span class="status">In Progress</span>
-
-    <h3>Stage 2 — Soil Moisture</h3>
-
-    <ul>
-      <li>Measure soil moisture</li>
-      <li>Compare dry and wet soil readings</li>
-      <li>Calibrate the sensor</li>
-      <li>Understand why readings change</li>
-    </ul>
-
-  </div>
-
-
-  <div class="card">
-
-    <span class="status">Planned</span>
-
-    <h3>Stage 3 — Automatic Watering</h3>
-
-    <ul>
-      <li>Connect a water pump</li>
-      <li>Decide when watering is needed</li>
-      <li>Create watering rules</li>
-      <li>Add safety limits</li>
-    </ul>
-
-  </div>
-
-
-  <div class="card">
-
-    <span class="status">Planned</span>
-
-    <h3>Stage 4 — Light Measurement</h3>
-
-    <ul>
-      <li>Measure light levels</li>
-      <li>Observe changing growing conditions</li>
-      <li>Compare light with plant growth</li>
-    </ul>
-
-  </div>
-
-
-  <div class="card">
-
-    <span class="status">Planned</span>
-
-    <h3>Stage 5 — Real Plant Testing</h3>
-
-    <ul>
-      <li>Test the system with a real plant</li>
-      <li>Record sensor data</li>
-      <li>Identify problems</li>
-      <li>Improve the system</li>
-    </ul>
-
-  </div>
-
-</section>
-
-
-<section id="questions">
-
-  <h2>03 — Questions I Want to Explore</h2>
-
-  <ul>
-    <li>When does a plant really need water?</li>
-    <li>How reliable is a soil moisture sensor?</li>
-    <li>Does sensor position affect the reading?</li>
-    <li>How does light affect plant growth?</li>
-    <li>Can technology make plant care more consistent?</li>
-  </ul>
-
-</section>
-
-
-<section id="club">
-
-  <h2>04 — Connection to Eco Grow Club</h2>
-
-  <p>
-    I started Eco Grow Club at school to explore plants
-    through growing, observation, sustainable design,
-    journaling, and botanical art.
-  </p>
-
-  <p>
-    My Smart Grow Project connects technology with the
-    same question I explore through the club:
-  </p>
-
-  <div class="question">
-    How can we understand plants better and care for them
-    more thoughtfully?
-  </div>
-
-</section>
-
-
-<section>
-
-  <h2>05 — Engineering Notebook</h2>
-
-  <p>
-    At every stage of the project, I record:
-  </p>
-
-  <div class="card">
-    <strong>1. What I tried</strong><br>
-    <strong>2. What happened</strong><br>
-    <strong>3. What I changed</strong><br>
-    <strong>4. What I will test next</strong>
-  </div>
-
-  <p>
-    I want this project to show not only what worked,
-    but also what failed and how I improved it.
-  </p>
-
-</section>
-
-
-<section id="next">
-
-  <h2>06 — What's Next?</h2>
-
-  <ul>
-    <li>Calibrate the soil moisture sensor</li>
-    <li>Build an automatic watering system</li>
-    <li>Measure light conditions</li>
-    <li>Test the system with a real plant</li>
-    <li>Record data over time</li>
-    <li>Improve the design based on observations</li>
-  </ul>
-
-</section>
-
-</main>
-
-
-<footer>
-
-  🌱 Juha's Smart Grow Project<br><br>
-
-  Built, tested, and documented step by step.
-
-</footer>
-
-</body>
-</html>
+Each experiment card should include:
+- Experiment ID
+- Research Question
+- Prediction
+- Setup
+- Variables
+- What I Measured
+- Result
+- What Surprised Me
+- What I Would Change Next Time
+
+Example experiments:
+- Does sensor position change the soil moisture reading?
+- How quickly does soil moisture change after watering?
+- Does light level affect watering frequency?
+
+Make this section look more like a student research notebook than a school science fair poster.
+
+SECTION 7 — DATA
+Create a clean data section.
+
+Include:
+- sensor data table
+- simple line chart placeholder
+- latest readings
+- comparison cards
+
+Example latest readings:
+Soil Moisture
+Light Level
+Temperature
+Humidity
+Pump Status
+
+Use a dark technical data panel.
+
+Do not hard-code fake scientific claims.
+Use placeholder/demo values clearly marked as sample data.
+
+Include comments explaining where real data can be updated later.
+
+SECTION 8 — CODE / TECHNICAL NOTES
+Create a restrained code section.
+
+Show short Arduino examples only.
+
+Example:
+if (soilMoisture < threshold) {
+  waterPlant();
+}
+
+Include small explanatory notes.
+
+Avoid making the site look like a developer documentation page.
+The goal is to show technical understanding, not overwhelm the viewer.
+
+SECTION 9 — ECO GROW CLUB
+Create a separate but visually connected section.
+
+Explain:
+- Juha started Eco Grow Club at school
+- the club includes plant growing, observation, recycled-material planter design, journaling, and botanical art
+- the Smart Grow project grew naturally from similar questions about plant care and observation
+
+Include a short leadership subsection:
+My Role
+- planning activities
+- organizing materials
+- guiding members
+- working with a faculty advisor
+- helping members make decisions
+
+Avoid making this section look like a résumé bullet list.
+
+SECTION 10 — REFLECTIONS
+Create a long-term reflection archive.
+
+Suggested reflection prompts:
+- What was harder than I expected?
+- What failed?
+- What changed my thinking?
+- What can I explain now that I could not explain before?
+- What do I want to explore next?
+
+Use a calmer editorial layout.
+
+SECTION 11 — CURRENT STATUS
+Create a compact project status dashboard.
+
+Example:
+Current Version: v0.2
+Current Focus: Soil Moisture Calibration
+Next Milestone: Automatic Watering
+Testing Status: In Progress
+Notebook Entries: 04
+Experiments: 02
+
+Do not over-gamify.
+
+SECTION 12 — FOOTER
+Include:
+Juha’s Smart Grow Lab
+Student Engineering Project
+Started 2026
+
+Optional:
+GitHub
+Project Updates
+
+Do not include admissions language.
+
+INTERACTION / UX:
+- smooth scrolling
+- sticky nav
+- subtle hover states
+- mobile responsive
+- accessible color contrast
+- keyboard-friendly
+- no heavy animation
+- no parallax
+- no flashy effects
+- keep animation minimal and professional
+
+IMAGE HANDLING:
+Create reusable image placeholders with:
+- caption
+- date
+- optional description
+
+Example:
+<figure>
+  <img ...>
+  <figcaption>
+    Prototype v0.2 — Soil moisture sensor calibration, Oct 2026
+  </figcaption>
+</figure>
+
+Make it easy to replace images later.
+
+ENGINEERING NOTE + PHOTO UPDATE SYSTEM:
+The HTML must be structured so that a non-expert parent or student can update it easily.
+
+Add clear comments in the source code such as:
+<!-- UPDATE CURRENT STATUS HERE -->
+<!-- ADD NEW BUILD LOG HERE -->
+<!-- ADD NEW EXPERIMENT HERE -->
+<!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
+<!-- ADD NEW PROJECT PHOTO HERE -->
+
+Keep each content block modular and easy to duplicate.
+
+TECHNICAL REQUIREMENTS:
+- Produce one complete self-contained index.html file.
+- Use semantic HTML5.
+- Put CSS inside <style>.
+- Use only minimal JavaScript if necessary.
+- Do not require React, npm, Node, or external build tools.
+- The page must work directly when deployed on Vercel or GitHub Pages.
+- Use Google Fonts via <link> if needed.
+- Avoid external UI frameworks.
+- No Bootstrap.
+- No Tailwind.
+- Keep the code readable and well-commented.
+- Use CSS variables for colors and typography.
+- Make editing simple.
+
+VERY IMPORTANT:
+The website must look believable as the portfolio of a thoughtful Grade 8 student with:
+- 1 year of Arduino experience
+- 1 prior year of VEX robotics coding
+- genuine interest in engineering and plant science
+
+It should show growth and seriousness without making the student appear like a professional engineer.
+
+The design must be mature enough to continue through Upper School without needing a complete redesign.
+
+Create the complete HTML now.
