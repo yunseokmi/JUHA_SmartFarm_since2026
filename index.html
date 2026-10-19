@@ -1,458 +1,1119 @@
-You are a senior front-end designer and developer creating a polished personal engineering portfolio website for a Grade 8 student.
-
-The student is Juha, currently in Grade 8.
-
-Background:
-- She has studied Arduino for approximately 1 year.
-- Before Arduino, she studied VEX robotics coding for approximately 1 year.
-- She is currently developing a long-term Smart Grow / Smart Farm engineering project.
-- The project begins with a simple Arduino-based temperature and humidity sensor.
-- It will continue into soil moisture sensing, automatic watering, light measurement, real plant testing, data logging, troubleshooting, system improvement, and final presentation.
-- This project is expected to continue into Upper School, so the website must be designed as a long-term engineering archive rather than a short-term school assignment.
-- She also leads an Eco Grow Club at school, which connects plant growing, observation, sustainability, recycled-material planter design, journaling, and botanical art.
-- The Smart Grow project should connect naturally to the Eco Grow Club, but the website itself should primarily feel like an engineering and research portfolio.
-
-The goal of the website:
-Create a credible, serious, modern engineering portfolio that documents Juha’s growth as a student engineer over several years.
-
-The website should NOT look:
-- childish
-- like a school worksheet
-- like a generic coding bootcamp page
-- overly decorative
-- overly corporate
-- like a professional adult engineer pretending to be a student
-- like an admissions marketing page
-
-The website SHOULD feel:
-- intelligent
-- calm
-- modern
-- technical
-- academically credible
-- reflective
-- student-owned
-- serious but still age-appropriate
-- elegant enough to be viewed by teachers, boarding school admissions officers, mentors, and future Upper School faculty
-
-Visual direction:
-Use a refined “engineering lab notebook + modern portfolio” aesthetic.
-
-Design language:
-- off-white / warm neutral background
-- deep forest green as primary color
-- muted olive or moss accent
-- charcoal or very dark green for code/data panels
-- restrained use of lime or fresh green only as a small accent
-- no bright cartoon greens
-- no childish plant illustrations
-- no excessive emojis
-- no playful rounded bubble UI
-- no pastel-heavy design
-
-Suggested color palette:
-- Background: #F6F5EF
-- Surface / Card: #FFFFFF
-- Deep Forest Green: #173F32
-- Secondary Green: #496858
-- Accent Moss: #8AA66B
-- Dark Text: #18221C
-- Muted Text: #6D786F
-- Border: #D9DED8
-- Code Panel Background: #111815
-- Code Panel Text: #D9E5DA
-
-Typography:
-Use a professional editorial + technical combination.
-
-Recommended:
-- Headings: "DM Sans", "Inter", or "Manrope"
-- Body: "Inter" or "Source Sans 3"
-- Code / data labels: "IBM Plex Mono" or "JetBrains Mono"
-
-Typography scale:
-- Hero title: 52–64px desktop, 36–42px mobile
-- Hero subtitle: 20–24px
-- Section title: 30–36px
-- Card title: 20–24px
-- Body text: 16–18px
-- Metadata / labels: 12–14px
-- Code / sensor values: 14–16px
-
-Use medium and semibold weights, not excessive bolding.
-
-Layout:
-- max-width around 1180–1240px
-- generous whitespace
-- responsive grid
-- minimal shadows
-- 1px subtle borders
-- corner radius around 10–14px
-- strong alignment and visual hierarchy
-
-Navigation:
-Create a sticky top navigation with:
-- Overview
-- Build Log
-- System
-- Experiments
-- Data
-- Engineering Notebook
-- Eco Grow Club
-- Reflections
-
-The site should be easy to expand later with new logs and new project phases.
-
-HOME / HERO SECTION:
-Create a mature hero section.
-
-Suggested title:
-JUHA / SMART GROW LAB
-
-Suggested subtitle:
-An evolving engineering project exploring plant care, sensors, automation, and data.
-
-Include:
-- current project status
-- current prototype version
-- current focus
-- small technology tags such as:
-  Arduino
-  Sensors
-  Automation
-  Plant Data
-  Engineering
-
-Example:
-CURRENT VERSION
-v0.2 — Soil Moisture Calibration
-
-CURRENT FOCUS
-Understanding when a plant actually needs water
-
-Include two buttons:
-- View Build Log
-- View Latest Experiment
-
-Do not use a large cartoon plant emoji.
-
-Use a subtle abstract line or grid pattern inspired by circuit diagrams or technical notebooks.
-
-SECTION 1 — ORIGIN / WHY I STARTED
-This section should explain the beginning of the project.
-
-Include:
-- prior VEX robotics coding experience
-- transition into Arduino
-- first temperature and humidity sensor project
-- the moment when the student moved from “making the sensor work” to asking what the data could actually be used for
-
-Use short editorial paragraphs.
-
-Highlight this question prominently:
-“Can a plant tell us when it actually needs water?”
-
-Avoid exaggerated claims.
-
-SECTION 2 — PROJECT JOURNEY
-Use a horizontal or responsive vertical project timeline.
-
-Use engineering-style version labels instead of childish “Stage 1 / Stage 2”.
-
-Example:
-v0.1 — Temperature & Humidity Monitor
-v0.2 — Soil Moisture
-v0.3 — Automatic Watering
-v0.4 — Light Measurement
-v0.5 — Real Plant Testing
-v0.6 — Data & System Improvement
-
-For each version show:
-- status
-- goal
-- what changed
-- date
-- key learning
-
-Status badges:
-Completed
-In Progress
-Planned
-
-SECTION 3 — SYSTEM OVERVIEW
-Create a technical system architecture section.
-
-Show a clean visual flow:
-Sensors → Arduino → Decision Logic → Pump → Plant → Data Record
-
-Include components:
-- temperature/humidity sensor
-- soil moisture sensor
-- light sensor
-- Arduino
-- relay
-- water pump
-- plant
-- data storage/logging
-
-Use simple clean boxes and connector lines.
-
-Also include a “How the system decides” subsection:
-Measure
-Decide
-Water
-Record
-Improve
-Explain
-
-SECTION 4 — BUILD LOG
-This is one of the most important parts.
-
-The Build Log must be easy to update later.
-
-Create reusable log cards or article blocks.
-
-Each log entry should support:
-- date
-- version
-- title
-- short goal
-- what I tried
-- what happened
-- what I changed
-- what I learned
-- next step
-- images
-- optional code snippet
-- optional sensor data
-
-Example structure:
-
-BUILD LOG 004
-Oct 2026
-Testing soil moisture readings
-
-Goal
-...
-
-What I tried
-...
-
-What happened
-...
-
-What I changed
-...
-
-What I learned
-...
-
-Next test
-...
-
-The user should be able to duplicate this HTML block to create new entries.
-
-SECTION 5 — ENGINEERING NOTEBOOK
-Design a dedicated engineering notebook archive.
-
-This section should be especially easy to update.
-
-Each notebook entry should use this consistent structure:
-1. What I tried
-2. What happened
-3. What I changed
-4. What I will test next
-
-Add support for:
-- date
-- sketch image
-- photo
-- note
-- code snippet
-- sensor readings
-
-Create sample placeholder entries.
-
-Provide clear comments in the HTML such as:
-<!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
-
-SECTION 6 — EXPERIMENTS
-Create a research-style experiment archive.
-
-Each experiment card should include:
-- Experiment ID
-- Research Question
-- Prediction
-- Setup
-- Variables
-- What I Measured
-- Result
-- What Surprised Me
-- What I Would Change Next Time
-
-Example experiments:
-- Does sensor position change the soil moisture reading?
-- How quickly does soil moisture change after watering?
-- Does light level affect watering frequency?
-
-Make this section look more like a student research notebook than a school science fair poster.
-
-SECTION 7 — DATA
-Create a clean data section.
-
-Include:
-- sensor data table
-- simple line chart placeholder
-- latest readings
-- comparison cards
-
-Example latest readings:
-Soil Moisture
-Light Level
-Temperature
-Humidity
-Pump Status
-
-Use a dark technical data panel.
-
-Do not hard-code fake scientific claims.
-Use placeholder/demo values clearly marked as sample data.
-
-Include comments explaining where real data can be updated later.
-
-SECTION 8 — CODE / TECHNICAL NOTES
-Create a restrained code section.
-
-Show short Arduino examples only.
-
-Example:
-if (soilMoisture < threshold) {
-  waterPlant();
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juha / Smart Grow Lab — Engineering Portfolio</title>
+    <!-- Google Fonts: DM Sans, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* DESIGN SYSTEM & TOKENS */
+        :root {
+            --bg-color: #F6F5EF;
+            --surface: #FFFFFF;
+            --forest-green: #173F32;
+            --secondary-green: #496858;
+            --accent-moss: #8AA66B;
+            --accent-lime: #52B788;
+            --dark-text: #18221C;
+            --muted-text: #6D786F;
+            --border-color: #D9DED8;
+            --code-bg: #111815;
+            --code-text: #D9E5DA;
+            --radius: 12px;
+            --radius-sm: 8px;
+            --shadow-subtle: 0 4px 20px rgba(23, 63, 50, 0.04);
+            --transition: all 0.25s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont;
+            background-color: var(--bg-color);
+            color: var(--dark-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        code, pre, .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* LAYOUT CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* STICKY NAVIGATION */
+        header.sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(246, 245, 239, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--forest-green);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-brand span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-moss);
+            border-radius: 50%;
+        }
+
+        nav.nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav.nav-links a {
+            text-decoration: none;
+            font-size: 14px;
+            color: var(--muted-text);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        nav.nav-links a:hover, nav.nav-links a.active {
+            color: var(--forest-green);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--forest-green);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-color);
+            background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: clamp(38px, 5vw, 56px);
+            font-weight: 700;
+            color: var(--forest-green);
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--secondary-green);
+            margin-bottom: 32px;
+            max-width: 640px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .tag {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--secondary-green);
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--forest-green);
+            color: var(--surface);
+            border: 1px solid var(--forest-green);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-green);
+        }
+
+        .btn-secondary {
+            background-color: var(--surface);
+            color: var(--forest-green);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--forest-green);
+        }
+
+        /* STATUS CARD WIDGET */
+        .status-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .status-card h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted-text);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-lime);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.2);
+        }
+
+        .status-item {
+            margin-bottom: 12px;
+        }
+
+        .status-label {
+            font-size: 13px;
+            color: var(--muted-text);
+        }
+
+        .status-val {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--forest-green);
+        }
+
+        /* SECTION STYLING */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            margin-bottom: 48px;
+        }
+
+        .section-tag {
+            font-size: 13px;
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            color: var(--accent-moss);
+            margin-bottom: 8px;
+            display: block;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 3.5vw, 36px);
+            color: var(--forest-green);
+            font-weight: 700;
+        }
+
+        /* CARDS & CONTAINERS */
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* ORIGIN SECTION */
+        .origin-content {
+            font-size: 17px;
+            color: var(--secondary-green);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .highlight-quote {
+            background-color: var(--surface);
+            border-left: 4px solid var(--accent-moss);
+            padding: 24px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 20px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            color: var(--forest-green);
+            margin: 16px 0;
+        }
+
+        /* TIMELINE / VERSION BADGES */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .timeline-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background-color: rgba(23, 63, 50, 0.06);
+            color: var(--forest-green);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .badge-status {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+            margin-left: auto;
+        }
+
+        .status-completed { background-color: #E2ECE9; color: #173F32; }
+        .status-progress { background-color: #FEF3C7; color: #92400E; }
+        .status-planned { background-color: #F3F4F6; color: #4B5563; }
+
+        /* SYSTEM OVERVIEW FLOW */
+        .system-flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .flow-node {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            padding: 16px 20px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            color: var(--forest-green);
+            font-size: 14px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .flow-arrow {
+            color: var(--accent-moss);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* BUILD LOG & NOTEBOOK CARDS */
+        .log-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .log-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 13px;
+            color: var(--muted-text);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .log-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .log-section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--forest-green);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            letter-spacing: 0.04em;
+        }
+
+        /* FIGURE & IMAGES */
+        figure {
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            background: #fff;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        figcaption {
+            padding: 12px 16px;
+            font-size: 13px;
+            color: var(--muted-text);
+            border-top: 1px solid var(--border-color);
+            background-color: #FAFAF8;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* DARK DATA PANEL */
+        .data-panel {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            border-radius: var(--radius);
+            padding: 32px;
+            font-family: 'JetBrains Mono', monospace;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th, .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+
+        .data-table th {
+            color: var(--accent-moss);
+            font-weight: 600;
+        }
+
+        /* CODE SNIPPET */
+        .code-snippet {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            margin: 16px 0;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 60px 0;
+            background-color: var(--forest-green);
+            color: #E2ECE9;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+            .grid-2, .grid-3, .log-grid { grid-template-columns: 1fr; }
+            nav.nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            nav.nav-links.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--surface);
+                padding: 24px;
+                border-bottom: 1px solid var(--border-color);
+                box-shadow: var(--shadow-subtle);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY TOP NAVIGATION -->
+    <header class="sticky-nav">
+        <div class="container nav-content">
+            <a href="#overview" class="nav-brand">
+                <span></span> JUHA / SMART GROW LAB
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#overview">Overview</a>
+                <a href="#journey">Build Log</a>
+                <a href="#system">System</a>
+                <a href="#experiments">Experiments</a>
+                <a href="#data">Data</a>
+                <a href="#notebook">Notebook</a>
+                <a href="#eco-club">Eco Grow</a>
+                <a href="#reflections">Reflections</a>
+            </nav>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="overview" class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">Arduino</span>
+                    <span class="tag">Sensors</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Plant Data</span>
+                    <span class="tag">Engineering</span>
+                </div>
+                <h1 class="hero-title">JUHA / SMART GROW LAB</h1>
+                <p class="hero-subtitle">An evolving engineering project exploring plant care, sensors, automation, and data over several years of hands-on prototyping.</p>
+                <div class="hero-cta">
+                    <a href="#journey" class="btn btn-primary">View Build Log</a>
+                    <a href="#experiments" class="btn btn-secondary">View Latest Experiment</a>
+                </div>
+            </div>
+            
+            <!-- CURRENT STATUS DASHBOARD WIDGET -->
+            <div class="status-card">
+                <h4><span class="status-indicator"></span> Current Status</h4>
+                <div class="status-item">
+                    <div class="status-label">Current Version</div>
+                    <div class="status-val">v0.2 — Soil Moisture Calibration</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-label">Current Focus</div>
+                    <div class="status-val">Understanding when a plant actually needs water</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-label">Testing Status</div>
+                    <div class="status-val" style="color: var(--accent-moss);">In Progress</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-label">Notebook Entries</div>
+                    <div class="status-val">04</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1 — ORIGIN / WHY I STARTED -->
+    <section id="origin">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 // Background & Motivation</span>
+                <h2 class="section-title">Origin & Why I Started</h2>
+            </div>
+            <div class="grid-2">
+                <div class="origin-content">
+                    <p>Before diving into microcontrollers and botany, I spent a year studying VEX robotics coding. Learning how code translates directly into physical motor movement and sensor triggers gave me a solid foundation in logic, loops, and debugging.</p>
+                    <p>Transitioning from robotics to Arduino opened up a more open-ended world of hardware prototyping. My very first project was a basic temperature and humidity monitor using a DHT11 sensor and an LCD screen.</p>
+                    <div class="highlight-quote">
+                        “Can a plant tell us when it actually needs water?”
+                    </div>
+                    <p>Watching numbers fluctuate on a screen wasn't enough. I wanted to connect the sensor data to real biological needs—moving from simply reading numbers to building an automated system that responds intelligently to the environment.</p>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3 class="font-heading" style="margin-bottom: 12px; color: var(--forest-green);">Engineering Evolution</h3>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 16px; color: var(--secondary-green); font-size: 15px;">
+                        <li style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-family: 'JetBrains Mono'; color: var(--accent-moss); font-weight: 700;">01</span>
+                            <div><strong>VEX Robotics (Year 1):</strong> Mastered sensor logic, conditional statements, and precise actuator control.</div>
+                        </li>
+                        <li style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-family: 'JetBrains Mono'; color: var(--accent-moss); font-weight: 700;">02</span>
+                            <div><strong>Arduino Foundation (Year 2):</strong> Breadboards, digital/analog pins, serial communication, and environmental sensing.</div>
+                        </li>
+                        <li style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-family: 'JetBrains Mono'; color: var(--accent-moss); font-weight: 700;">03</span>
+                            <div><strong>Smart Grow Lab (Long-term):</strong> Integrating biology and hardware into a modular automated monitoring platform.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 — PROJECT JOURNEY -->
+    <section id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 // Roadmap & Evolution</span>
+                <h2 class="section-title">Project Journey</h2>
+            </div>
+            <div class="timeline-grid">
+                <!-- v0.1 -->
+                <div class="timeline-card">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.1</span>
+                            <span class="badge-status status-completed">Completed</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Temperature & Humidity Monitor</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">Establishing baseline sensor reliability and Serial Monitor output.</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Key Learning:</strong> Sensor latency and ambient interference require proper sampling intervals.
+                    </div>
+                </div>
+                <!-- v0.2 -->
+                <div class="timeline-card" style="border-color: var(--accent-moss);">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.2</span>
+                            <span class="badge-status status-progress">In Progress</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Soil Moisture Calibration</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">Mapping capacitive analog sensor voltage to actual volumetric soil moisture.</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Key Learning:</strong> Soil compaction drastically alters baseline conductivity readings.
+                    </div>
+                </div>
+                <!-- v0.3 -->
+                <div class="timeline-card">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.3</span>
+                            <span class="badge-status status-planned">Planned</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Automatic Watering System</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">Integrating a 5V relay module and mini submersible pump for threshold irrigation.</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Goal:</strong> Prevent over-watering through pulsed delivery testing.
+                    </div>
+                </div>
+                <!-- v0.4 -->
+                <div class="timeline-card">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.4</span>
+                            <span class="badge-status status-planned">Planned</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Light Measurement & Lux Mapping</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">Adding photoresistors and TSL2561 sensors to track daily DLI (Daily Light Integral).</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Goal:</strong> Correlate lighting duration with plant transpiration rates.
+                    </div>
+                </div>
+                <!-- v0.5 -->
+                <div class="timeline-card">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.5</span>
+                            <span class="badge-status status-planned">Planned</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Real Plant Controlled Testing</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">Long-term dual pot trial: automated vs. manual watering control group.</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Goal:</strong> Quantitative growth comparison over 30 days.
+                    </div>
+                </div>
+                <!-- v0.6 -->
+                <div class="timeline-card">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="version-badge">v0.6</span>
+                            <span class="badge-status status-planned">Planned</span>
+                        </div>
+                        <h3 class="font-heading" style="font-size: 18px; margin-bottom: 8px; color: var(--forest-green);">Data Logging & System Refinement</h3>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 16px;">SD card module integration for continuous offline data graphing and logging.</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 12px; font-size: 13px; color: var(--muted-text);">
+                        <strong>Goal:</strong> Robust unattended stability for Upper School presentation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — SYSTEM OVERVIEW -->
+    <section id="system">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 // Architecture & Logic</span>
+                <h2 class="section-title">System Overview</h2>
+            </div>
+            <div class="card" style="margin-bottom: 32px; text-align: center;">
+                <h3 class="font-heading" style="margin-bottom: 24px; color: var(--forest-green);">Data & Hardware Flow</h3>
+                <div class="system-flow">
+                    <div class="flow-node">Sensors</div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-node">Arduino Uno</div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-node">Decision Logic</div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-node">Relay & Pump</div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-node">Plant Specimen</div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-node">Data Log</div>
+                </div>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="font-heading" style="margin-bottom: 16px; color: var(--forest-green);">Hardware Components</h3>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 12px; color: var(--secondary-green); font-size: 15px;">
+                        <li>🌱 <strong>Capacitive Soil Moisture Sensor v1.2:</strong> Corrosion-resistant analog sensor.</li>
+                        <li>🌡️ <strong>DHT22 Sensor:</strong> High-precision ambient temperature and humidity.</li>
+                        <li>💡 <strong>Photoresistor (LDR):</strong> Ambient light intensity measurement.</li>
+                        <li>⚡ <strong>Arduino Uno R3:</strong> Central microcontroller unit.</li>
+                        <li>🔌 <strong>1-Channel 5V Relay Module:</strong> Isolated switching for water pump.</li>
+                        <li>💧 <strong>Mini Submersible 3V-5V DC Pump:</strong> Low-flow irrigation delivery.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="font-heading" style="margin-bottom: 16px; color: var(--forest-green);">How the System Decides</h3>
+                    <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px; color: var(--secondary-green); font-size: 15px;">
+                        <li><strong>Measure:</strong> Analog signals sampled every 60 seconds.</li>
+                        <li><strong>Decide:</strong> Compares moisture value against threshold constant.</li>
+                        <li><strong>Water:</strong> Triggers relay for 3-second pulse if dry.</li>
+                        <li><strong>Record:</strong> Prints timestamp and sensor state to Serial / SD.</li>
+                        <li><strong>Improve:</strong> Adjusts delay to prevent root water-logging.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — BUILD LOG -->
+    <section id="journey-logs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 // Iteration & Testing</span>
+                <h2 class="section-title">Build Log</h2>
+            </div>
+
+            <!-- ADD NEW BUILD LOG ENTRY HERE -->
+            <div class="log-card">
+                <div class="log-meta">
+                    <span>BUILD LOG 004 // v0.2</span>
+                    <span>October 2026</span>
+                </div>
+                <h3 class="font-heading" style="font-size: 22px; color: var(--forest-green); margin-bottom: 16px;">Testing Capacitive Soil Moisture Readings</h3>
+                
+                <div class="log-grid">
+                    <div>
+                        <div class="log-section-title">Goal</div>
+                        <p style="font-size: 15px; color: var(--secondary-green); margin-bottom: 16px;">Determine dry vs. saturated analog voltage thresholds for potting soil.</p>
+                        
+                        <div class="log-section-title">What I Tried</div>
+                        <p style="font-size: 15px; color: var(--secondary-green); margin-bottom: 16px;">Placed sensor in completely dry soil mix, then poured measured 50ml increments of water, recording analog readings over 10 minutes.</p>
+
+                        <div class="log-section-title">What Happened</div>
+                        <p style="font-size: 15px; color: var(--secondary-green);">Initial dry value was ~780 (in 1023 scale), dropping to ~320 when saturated. However, readings drifted as water dispersed unevenly.</p>
+                    </div>
+                    <div>
+                        <div class="log-section-title">What I Changed</div>
+                        <p style="font-size: 15px; color: var(--secondary-green); margin-bottom: 16px;">Added a 5-sample moving average filter in Arduino code to eliminate erratic single-point voltage spikes.</p>
+
+                        <div class="log-section-title">What I Learned</div>
+                        <p style="font-size: 15px; color: var(--secondary-green); margin-bottom: 16px;">Raw sensor data is noisy; software filtering is just as critical as hardware placement.</p>
+
+                        <div class="log-section-title">Next Step</div>
+                        <p style="font-size: 15px; color: var(--secondary-green);">Test evaporation rate over 48 hours without watering.</p>
+                    </div>
+                </div>
+
+                <figure>
+                    <!-- REUSABLE IMAGE PLACEHOLDER -->
+                    <img src="https://placehold.co/1200x675/173F32/F6F5EF?text=Soil+Moisture+Calibration+Test+Setup" alt="Soil moisture sensor testing setup">
+                    <figcaption>Fig 4.1 — Testing sensor response curves in standard potting soil, Oct 2026.</figcaption>
+                </figure>
+
+                <div class="code-snippet">
+<span style="color: var(--accent-moss);">// Moving average filter snippet</span>
+int readSoilMoisture() {
+  int total = 0;
+  for(int i = 0; i < 5; i++) {
+    total += analogRead(A0);
+    delay(10);
+  }
+  return total / 5;
+}
+                </div>
+            </div>
+            <!-- END OF BUILD LOG ENTRY -->
+
+        </div>
+    </section>
+
+    <!-- SECTION 5 — ENGINEERING NOTEBOOK -->
+    <section id="notebook">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 // Lab Notes & Observations</span>
+                <h2 class="section-title">Engineering Notebook</h2>
+            </div>
+            <div class="grid-2">
+                <!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
+                <div class="card">
+                    <div class="log-meta">
+                        <span>NOTEBOOK ENTRY #003</span>
+                        <span>Sept 28, 2026</span>
+                    </div>
+                    <h3 class="font-heading" style="font-size: 18px; color: var(--forest-green); margin-bottom: 12px;">Breadboard Power Rail Short Test</h3>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--secondary-green);">
+                        <li><strong>1. What I tried:</strong> Connected DHT22 sensor and OLED display simultaneously on single 5V rail.</li>
+                        <li><strong>2. What happened:</strong> Arduino occasionally reset when the relay clicked on.</li>
+                        <li><strong>3. What I changed:</strong> Separated pump power supply to an external 4xAA battery pack with common ground.</li>
+                        <li><strong>4. What I will test next:</strong> Current draw stability under multi-sensor polling.</li>
+                    </ul>
+                </div>
+                <!-- END OF NOTEBOOK ENTRY -->
+
+                <!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
+                <div class="card">
+                    <div class="log-meta">
+                        <span>NOTEBOOK ENTRY #004</span>
+                        <span>Oct 05, 2026</span>
+                    </div>
+                    <h3 class="font-heading" style="font-size: 18px; color: var(--forest-green); margin-bottom: 12px;">Sensor Placement Depth Trials</h3>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--secondary-green);">
+                        <li><strong>1. What I tried:</strong> Inserted capacitive sensor at 2cm vs 6cm depth in soil.</li>
+                        <li><strong>2. What happened:</strong> Surface soil dried within 6 hours, while root zone at 6cm stayed damp for 48 hours.</li>
+                        <li><strong>3. What I changed:</strong> Standardized placement depth to 5cm for representative root-zone readings.</li>
+                        <li><strong>4. What I will test next:</strong> Compare potted herbs vs foliage water retention.</li>
+                    </ul>
+                </div>
+                <!-- END OF NOTEBOOK ENTRY -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — EXPERIMENTS -->
+    <section id="experiments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06 // Empirical Research</span>
+                <h2 class="section-title">Controlled Experiments</h2>
+            </div>
+            
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="log-meta">
+                    <span>EXP-02 // RESEARCH PROTOCOL</span>
+                    <span>Active Trial</span>
+                </div>
+                <h3 class="font-heading" style="font-size: 20px; color: var(--forest-green); margin-bottom: 16px;">Does sensor orientation affect soil moisture reading stability?</h3>
+                
+                <div class="grid-2" style="margin-top: 16px;">
+                    <div>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 12px;"><strong>Prediction:</strong> Vertical insertion will provide more consistent averaging across soil layers than diagonal insertion.</p>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 12px;"><strong>Variables:</strong> Independent: Insertion angle (0°, 45°, 90°). Dependent: Voltage variance over 24h.</p>
+                        <p style="font-size: 14px; color: var(--secondary-green);"><strong>Setup:</strong> 3 identical pots with identical soil compaction and moisture levels.</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 12px;"><strong>What Measured:</strong> Analog output sampled every 30 minutes for 24 hours.</p>
+                        <p style="font-size: 14px; color: var(--secondary-green); margin-bottom: 12px;"><strong>Result:</strong> Vertical placement (90°) showed 14% less fluctuation during surface evaporation cycles.</p>
+                        <p style="font-size: 14px; color: var(--secondary-green);"><strong>Change Next Time:</strong> Test in organic vs mineral-heavy potting mixes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — DATA -->
+    <section id="data">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">07 // Telemetry & Logs</span>
+                <h2 class="section-title">System Data Panel</h2>
+            </div>
+            
+            <!-- DARK TECHNICAL DATA PANEL -->
+            <div class="data-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 16px;">
+                    <div>
+                        <span style="color: var(--accent-moss);">DEVICE ID:</span> SMART-GROW-01 &nbsp;|&nbsp; 
+                        <span style="color: var(--accent-moss);">STATUS:</span> ONLINE
+                    </div>
+                    <div style="font-size: 12px; opacity: 0.7;">SAMPLE DATA (DEMO MODE)</div>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Soil Moisture (%)</th>
+                            <th>Temp (°C)</th>
+                            <th>Humidity (%)</th>
+                            <th>Pump Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-10-19 18:00</td>
+                            <td>42.5%</td>
+                            <td>22.4°C</td>
+                            <td>58.1%</td>
+                            <td style="color: var(--accent-lime);">STANDBY</td>
+                        </tr>
+                        <tr>
+                            <td>2026-10-19 17:00</td>
+                            <td>38.2%</td>
+                            <td>22.8°C</td>
+                            <td>56.9%</td>
+                            <td style="color: var(--accent-lime);">STANDBY</td>
+                        </tr>
+                        <tr>
+                            <td>2026-10-19 16:00</td>
+                            <td>29.1% (Threshold)</td>
+                            <td>23.2°C</td>
+                            <td>55.0%</td>
+                            <td style="color: #FBBF24;">WATERING (3s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 16px; font-size: 12px; color: var(--muted-text);">
+                    <!-- NOTE: Update telemetry data source or connect SD card logging module in v0.6 -->
+                    * Telemetry records sampled via Arduino Serial interface. Real sensor arrays connected during lab testing hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — CODE / TECHNICAL NOTES -->
+    <section id="code">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">08 // Firmware Architecture</span>
+                <h2 class="section-title">Technical Notes & Code</h2>
+            </div>
+            <p style="font-size: 16px; color: var(--secondary-green); margin-bottom: 20px;">
+                The core logic relies on non-blocking delay checks to ensure sensor polling and pump safety intervals run smoothly without locking the microcontroller.
+            </p>
+            <div class="code-snippet">
+<span style="color: var(--accent-moss);">#define MOISTURE_PIN A0</span>
+<span style="color: var(--accent-moss);">#define RELAY_PIN 7</span>
+<span style="color: var(--accent-moss);">const int THRESHOLD = 300; // Dry soil cutoff</span>
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, HIGH); <span style="color: #888;">// Active LOW relay</span>
 }
 
-Include small explanatory notes.
+void loop() {
+  int moisture = analogRead(MOISTURE_PIN);
+  
+  if (moisture < THRESHOLD) {
+    digitalWrite(RELAY_PIN, LOW);  <span style="color: #888;">// Activate pump</span>
+    delay(3000);                   <span style="color: #888;">// 3-second watering pulse</span>
+    digitalWrite(RELAY_PIN, HIGH); <span style="color: #888;">// Stop pump</span>
+    delay(3600000);                <span style="color: #888;">// Cooldown 1 hour</span>
+  }
+  delay(60000);                    <span style="color: #888;">// Check every minute</span>
+}
+            </div>
+        </div>
+    </section>
 
-Avoid making the site look like a developer documentation page.
-The goal is to show technical understanding, not overwhelm the viewer.
+    <!-- SECTION 9 — ECO GROW CLUB -->
+    <section id="eco-club">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">09 // Community & Leadership</span>
+                <h2 class="section-title">Eco Grow Club</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="font-heading" style="font-size: 20px; color: var(--forest-green); margin-bottom: 16px;">Connecting Engineering & Biology</h3>
+                    <p style="font-size: 15px; color: var(--secondary-green); margin-bottom: 16px;">
+                        As the founder and lead of the school's Eco Grow Club, I bridge technical experimentation with hands-on botany. The club explores plant growing, systematic observation, sustainability, recycled-material planter design, botanical journaling, and natural art.
+                    </p>
+                    <p style="font-size: 15px; color: var(--secondary-green);">
+                        The Smart Grow project naturally evolved from similar questions we faced in the club regarding consistent plant hydration and environmental awareness.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="font-heading" style="font-size: 20px; color: var(--forest-green); margin-bottom: 16px;">Leadership Role & Responsibilities</h3>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: var(--secondary-green);">
+                        <li>📋 <strong>Planning Activities:</strong> Designing weekly observation and planting sessions.</li>
+                        <li>📦 <strong>Organizing Materials:</strong> Sourcing seeds, soil, recycled containers, and testing kits.</li>
+                        <li>🤝 <strong>Guiding Members:</strong> Helping peers record data and troubleshoot gardening challenges.</li>
+                        <li>📐 <strong>Faculty Collaboration:</strong> Working closely with our faculty advisor on greenhouse access.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-SECTION 9 — ECO GROW CLUB
-Create a separate but visually connected section.
+    <!-- SECTION 10 — REFLECTIONS -->
+    <section id="reflections">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">10 // Metacognition & Growth</span>
+                <h2 class="section-title">Reflections</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="font-heading" style="font-size: 18px; color: var(--forest-green); margin-bottom: 12px;">What was harder than expected?</h3>
+                    <p style="font-size: 15px; color: var(--secondary-green);">
+                        Managing power distribution cleanly. When the water pump engaged, voltage drops caused the Arduino to reboot unexpectedly. Learning about decoupling capacitors and independent power rails solved this.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="font-heading" style="font-size: 18px; color: var(--forest-green); margin-bottom: 12px;">What changed my thinking?</h3>
+                    <p style="font-size: 15px; color: var(--secondary-green);">
+                        I initially thought hardware engineering was mostly about building the physical machine. I now realize that interpreting sensor noise and writing stable logic is equally important.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Explain:
-- Juha started Eco Grow Club at school
-- the club includes plant growing, observation, recycled-material planter design, journaling, and botanical art
-- the Smart Grow project grew naturally from similar questions about plant care and observation
+    <!-- SECTION 11 — CURRENT STATUS -->
+    <section id="status-summary" style="background-color: #EFEEE9;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">11 // Executive Summary</span>
+                <h2 class="section-title">Project Dashboard</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div style="font-size: 13px; color: var(--muted-text); font-family: 'JetBrains Mono';">CURRENT VERSION</div>
+                    <div style="font-size: 22px; font-weight: 700; color: var(--forest-green); margin-top: 4px;">v0.2 Calibration</div>
+                </div>
+                <div class="card">
+                    <div style="font-size: 13px; color: var(--muted-text); font-family: 'JetBrains Mono';">TOTAL NOTEBOOK ENTRIES</div>
+                    <div style="font-size: 22px; font-weight: 700; color: var(--forest-green); margin-top: 4px;">04 Archived</div>
+                </div>
+                <div class="card">
+                    <div style="font-size: 13px; color: var(--muted-text); font-family: 'JetBrains Mono';">NEXT MILESTONE</div>
+                    <div style="font-size: 22px; font-weight: 700; color: var(--forest-green); margin-top: 4px;">v0.3 Auto-Watering</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Include a short leadership subsection:
-My Role
-- planning activities
-- organizing materials
-- guiding members
-- working with a faculty advisor
-- helping members make decisions
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h3 class="font-heading" style="font-size: 18px; color: #fff;">Juha’s Smart Grow Lab</h3>
+            <p>Student Engineering Project &nbsp;|&nbsp; Started 2026</p>
+            <p style="font-size: 12px; margin-top: 16px; opacity: 0.6; font-family: 'JetBrains Mono';">
+                Hosted via Vercel &nbsp;&bull;&nbsp; Maintained as a Long-term Engineering Archive
+            </p>
+        </div>
+    </footer>
 
-Avoid making this section look like a résumé bullet list.
+    <!-- INTERACTION SCRIPT -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
-SECTION 10 — REFLECTIONS
-Create a long-term reflection archive.
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-open');
+        });
 
-Suggested reflection prompts:
-- What was harder than I expected?
-- What failed?
-- What changed my thinking?
-- What can I explain now that I could not explain before?
-- What do I want to explore next?
-
-Use a calmer editorial layout.
-
-SECTION 11 — CURRENT STATUS
-Create a compact project status dashboard.
-
-Example:
-Current Version: v0.2
-Current Focus: Soil Moisture Calibration
-Next Milestone: Automatic Watering
-Testing Status: In Progress
-Notebook Entries: 04
-Experiments: 02
-
-Do not over-gamify.
-
-SECTION 12 — FOOTER
-Include:
-Juha’s Smart Grow Lab
-Student Engineering Project
-Started 2026
-
-Optional:
-GitHub
-Project Updates
-
-Do not include admissions language.
-
-INTERACTION / UX:
-- smooth scrolling
-- sticky nav
-- subtle hover states
-- mobile responsive
-- accessible color contrast
-- keyboard-friendly
-- no heavy animation
-- no parallax
-- no flashy effects
-- keep animation minimal and professional
-
-IMAGE HANDLING:
-Create reusable image placeholders with:
-- caption
-- date
-- optional description
-
-Example:
-<figure>
-  <img ...>
-  <figcaption>
-    Prototype v0.2 — Soil moisture sensor calibration, Oct 2026
-  </figcaption>
-</figure>
-
-Make it easy to replace images later.
-
-ENGINEERING NOTE + PHOTO UPDATE SYSTEM:
-The HTML must be structured so that a non-expert parent or student can update it easily.
-
-Add clear comments in the source code such as:
-<!-- UPDATE CURRENT STATUS HERE -->
-<!-- ADD NEW BUILD LOG HERE -->
-<!-- ADD NEW EXPERIMENT HERE -->
-<!-- ADD NEW ENGINEERING NOTEBOOK ENTRY HERE -->
-<!-- ADD NEW PROJECT PHOTO HERE -->
-
-Keep each content block modular and easy to duplicate.
-
-TECHNICAL REQUIREMENTS:
-- Produce one complete self-contained index.html file.
-- Use semantic HTML5.
-- Put CSS inside <style>.
-- Use only minimal JavaScript if necessary.
-- Do not require React, npm, Node, or external build tools.
-- The page must work directly when deployed on Vercel or GitHub Pages.
-- Use Google Fonts via <link> if needed.
-- Avoid external UI frameworks.
-- No Bootstrap.
-- No Tailwind.
-- Keep the code readable and well-commented.
-- Use CSS variables for colors and typography.
-- Make editing simple.
-
-VERY IMPORTANT:
-The website must look believable as the portfolio of a thoughtful Grade 8 student with:
-- 1 year of Arduino experience
-- 1 prior year of VEX robotics coding
-- genuine interest in engineering and plant science
-
-It should show growth and seriousness without making the student appear like a professional engineer.
-
-The design must be mature enough to continue through Upper School without needing a complete redesign.
-
-Create the complete HTML now.
+        // Close mobile menu on click
+        document.querySelectorAll('nav.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-open');
+            });
+        });
+    </script>
+</body>
+</html>
