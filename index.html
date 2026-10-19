@@ -1,137 +1,360 @@
-# 🌱 Juha's Smart Grow Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-> From a simple Arduino sensor to understanding how plants grow.
+  <title>Juha's Smart Grow Project</title>
 
-This project began with a simple question:
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #F7F5EE;
+      color: #26352C;
+      line-height: 1.7;
+    }
 
-**Can a plant tell us when it actually needs water?**
+    header {
+      background: #E9F0E5;
+      padding: 80px 24px;
+      text-align: center;
+    }
 
-I first learned Arduino by building a device that measured temperature and humidity.  
-That made me curious about how sensor data could be used to make better decisions for real plants.
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 14px;
+      color: #2F5D3A;
+    }
 
-This repository records my learning process as I develop the project step by step.
+    header p {
+      font-size: 20px;
+      color: #617065;
+      max-width: 720px;
+      margin: auto;
+    }
 
----
+    nav {
+      background: white;
+      padding: 18px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+    }
 
-## 🌿 Project Journey
+    nav a {
+      margin: 0 18px;
+      color: #365943;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-**Measure → Decide → Water → Record → Improve → Explain**
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 25px;
+    }
 
-### Stage 1 — My First Arduino Sensor
-- Measured temperature and humidity
-- Learned how sensors communicate with Arduino
-- Began understanding how environmental data can be collected
+    section {
+      margin-bottom: 80px;
+    }
 
-### Stage 2 — Soil Moisture
-- Measure soil moisture
-- Compare dry and wet soil readings
-- Calibrate the sensor
+    h2 {
+      font-size: 30px;
+      color: #315E3E;
+      margin-bottom: 24px;
+    }
 
-### Stage 3 — Automatic Watering
-- Connect a water pump
-- Decide when watering is needed
-- Create simple watering rules
+    h3 {
+      color: #486B51;
+      margin-top: 30px;
+    }
 
-### Stage 4 — Light Measurement
-- Measure light levels
-- Compare light conditions with plant growth
-- Observe how environmental conditions change over time
+    .question {
+      background: white;
+      border-left: 5px solid #739B72;
+      padding: 24px 28px;
+      margin: 30px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
 
-### Stage 5 — Real Plant Testing
-- Test the system with a real plant
-- Record sensor data
-- Check whether watering decisions make sense
-- Improve the system based on results
+    .journey {
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      padding: 30px;
+      background: #EDF3E9;
+      border-radius: 12px;
+      margin: 30px 0;
+    }
 
----
+    .card {
+      background: white;
+      padding: 28px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    }
 
-## 🔬 My Main Questions
+    .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #E7EFE5;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-- When does a plant really need water?
-- How reliable are soil moisture sensor readings?
-- How does light affect plant growth?
-- Can a simple system make plant care more consistent?
-- What happens when the sensor gives an unexpected reading?
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: #E9F0E5;
+      color: #667268;
+    }
 
----
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
 
-## 🛠 What I Am Learning
+      nav a {
+        display: inline-block;
+        margin: 7px;
+      }
+    }
+  </style>
+</head>
 
-- Arduino
-- Sensors
-- Soil moisture measurement
-- Light measurement
-- Pump control
-- Basic control algorithms
-- Data logging
-- Troubleshooting
-- Engineering design
-- Testing and improving prototypes
+<body>
 
----
+<nav>
+  <a href="#story">My Story</a>
+  <a href="#journey">Project Journey</a>
+  <a href="#questions">Questions</a>
+  <a href="#club">Eco Grow Club</a>
+  <a href="#next">What's Next</a>
+</nav>
 
-## 📓 Engineering Notebook
 
-For each step, I record:
+<header>
 
-1. **What I tried**
-2. **What happened**
-3. **What I changed**
-4. **What I will test next**
+  <h1>🌱 Juha's Smart Grow Project</h1>
 
-I want this project to show not only what worked, but also what did not work and how I improved it.
+  <p>
+    From a simple Arduino sensor to understanding
+    how plants grow.
+  </p>
 
----
+</header>
 
-## 🌱 Connection to Eco Grow Club
 
-I also started **Eco Grow Club** at school.
+<main>
 
-The club focuses on:
-- growing plants from seeds
-- observing plant growth
-- designing planters with recycled materials
-- keeping an Eco Grow Journal
-- creating botanical drawings
+<section id="story">
 
-My Smart Grow Project connects technology with the same questions I explore in Eco Grow Club:
+  <h2>01 — Why I Started</h2>
 
-**How can we understand plants better and care for them more thoughtfully?**
+  <p>
+    My first Arduino project was a simple device that
+    measured temperature and humidity.
+  </p>
 
----
+  <p>
+    At first, I was excited just to see the sensor work.
+    But then I started wondering what I could actually
+    do with the information.
+  </p>
 
-## 📊 Project Progress
+  <div class="question">
+    Can a plant tell us when it actually needs water?
+  </div>
 
-| Stage | Status |
-|---|---|
-| Arduino temperature/humidity sensor | ✅ Completed |
-| Soil moisture measurement | 🔄 In progress |
-| Automatic watering system | ⏳ Planned |
-| Light sensor integration | ⏳ Planned |
-| Real plant testing | ⏳ Planned |
-| Data analysis | ⏳ Planned |
-| Final presentation | ⏳ Planned |
+  <p>
+    That question became the starting point of this project.
+    I want to learn how sensors, data, and real plant
+    observations can help me make better decisions.
+  </p>
 
----
+</section>
 
-## 📂 Repository Structure
 
-```text
-smart-grow-project/
-│
-├── arduino/
-│   └── source-code
-│
-├── data/
-│   └── sensor-readings
-│
-├── experiments/
-│   └── test-notes
-│
-├── images/
-│   └── project-photos
-│
-├── engineering-notebook/
-│   └── weekly-reflections
-│
-└── README.md
+<section id="journey">
+
+  <h2>02 — Project Journey</h2>
+
+  <div class="journey">
+    Measure → Decide → Water → Record → Improve → Explain
+  </div>
+
+
+  <div class="card">
+
+    <span class="status">✓ Completed</span>
+
+    <h3>Stage 1 — My First Arduino Sensor</h3>
+
+    <ul>
+      <li>Measured temperature and humidity</li>
+      <li>Learned how sensors communicate with Arduino</li>
+      <li>Started exploring environmental data</li>
+    </ul>
+
+  </div>
+
+
+  <div class="card">
+
+    <span class="status">In Progress</span>
+
+    <h3>Stage 2 — Soil Moisture</h3>
+
+    <ul>
+      <li>Measure soil moisture</li>
+      <li>Compare dry and wet soil readings</li>
+      <li>Calibrate the sensor</li>
+      <li>Understand why readings change</li>
+    </ul>
+
+  </div>
+
+
+  <div class="card">
+
+    <span class="status">Planned</span>
+
+    <h3>Stage 3 — Automatic Watering</h3>
+
+    <ul>
+      <li>Connect a water pump</li>
+      <li>Decide when watering is needed</li>
+      <li>Create watering rules</li>
+      <li>Add safety limits</li>
+    </ul>
+
+  </div>
+
+
+  <div class="card">
+
+    <span class="status">Planned</span>
+
+    <h3>Stage 4 — Light Measurement</h3>
+
+    <ul>
+      <li>Measure light levels</li>
+      <li>Observe changing growing conditions</li>
+      <li>Compare light with plant growth</li>
+    </ul>
+
+  </div>
+
+
+  <div class="card">
+
+    <span class="status">Planned</span>
+
+    <h3>Stage 5 — Real Plant Testing</h3>
+
+    <ul>
+      <li>Test the system with a real plant</li>
+      <li>Record sensor data</li>
+      <li>Identify problems</li>
+      <li>Improve the system</li>
+    </ul>
+
+  </div>
+
+</section>
+
+
+<section id="questions">
+
+  <h2>03 — Questions I Want to Explore</h2>
+
+  <ul>
+    <li>When does a plant really need water?</li>
+    <li>How reliable is a soil moisture sensor?</li>
+    <li>Does sensor position affect the reading?</li>
+    <li>How does light affect plant growth?</li>
+    <li>Can technology make plant care more consistent?</li>
+  </ul>
+
+</section>
+
+
+<section id="club">
+
+  <h2>04 — Connection to Eco Grow Club</h2>
+
+  <p>
+    I started Eco Grow Club at school to explore plants
+    through growing, observation, sustainable design,
+    journaling, and botanical art.
+  </p>
+
+  <p>
+    My Smart Grow Project connects technology with the
+    same question I explore through the club:
+  </p>
+
+  <div class="question">
+    How can we understand plants better and care for them
+    more thoughtfully?
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2>05 — Engineering Notebook</h2>
+
+  <p>
+    At every stage of the project, I record:
+  </p>
+
+  <div class="card">
+    <strong>1. What I tried</strong><br>
+    <strong>2. What happened</strong><br>
+    <strong>3. What I changed</strong><br>
+    <strong>4. What I will test next</strong>
+  </div>
+
+  <p>
+    I want this project to show not only what worked,
+    but also what failed and how I improved it.
+  </p>
+
+</section>
+
+
+<section id="next">
+
+  <h2>06 — What's Next?</h2>
+
+  <ul>
+    <li>Calibrate the soil moisture sensor</li>
+    <li>Build an automatic watering system</li>
+    <li>Measure light conditions</li>
+    <li>Test the system with a real plant</li>
+    <li>Record data over time</li>
+    <li>Improve the design based on observations</li>
+  </ul>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  🌱 Juha's Smart Grow Project<br><br>
+
+  Built, tested, and documented step by step.
+
+</footer>
+
+</body>
+</html>
